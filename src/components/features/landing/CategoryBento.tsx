@@ -23,7 +23,7 @@ const categories = [
     size: "col-span-1 row-span-1",
     themeColor: "bg-[var(--secondary)]",
     textColor: "text-[var(--text-main)]",
-    imgConfig: "justify-start items-end -translate-x-4 scale-110" // Cat on left
+    imgConfig: "justify-start items-end -translate-x-4 scale-110" // Left aligned
   },
   {
     id: 3,
@@ -68,16 +68,14 @@ export function CategoryBento() {
                >
                    {/* Content */}
                    <div className="relative z-20 flex flex-col h-full justify-between pointer-events-none">
-                       {/* Header stays top-left usually, unless constrained, but for Bento cards top-left is standard safe zone */}
+                       {/* Header */}
                        <div className="max-w-[70%]"> 
                            <h3 className="text-2xl md:text-3xl font-bold mb-2">{cat.title}</h3>
                            <p className={`opacity-80 font-medium ${cat.textColor === 'text-white' ? 'text-white/80' : 'text-gray-600'}`}>{cat.subtitle}</p>
                        </div>
                        
-                       {/* Button default bottom-left. For 'Gato' (Left Image), we might want to push it right? 
-                           For now, keeping it standard. The image z-index is lower or parallel. 
-                       */}
-                       <div className={`flex items-center gap-2 font-bold group-hover:gap-4 transition-all ${cat.id === 2 ? 'self-end' : ''}`}> 
+                       {/* Button */}
+                       <div className="flex items-center gap-2 font-bold group-hover:gap-4 transition-all"> 
                            <span>Ver Más</span>
                            <div className={`p-1 rounded-full ${cat.textColor === 'text-white' ? 'bg-white/20' : 'bg-black/5'}`}>
                                <ArrowRight className="w-4 h-4" />
@@ -86,14 +84,13 @@ export function CategoryBento() {
                    </div>
 
                    {/* Image Wrapper - Positioned by imgConfig */}
-                   {/* We remove right-0/bottom-0 hard constraints and use flex container to position the image inside the w-full h-full absolute layer */}
                    <div className={`absolute inset-0 z-10 flex ${cat.imgConfig || 'justify-end items-end'} pointer-events-none`}>
                         <div className="relative w-[90%] h-[90%] transition-transform duration-500 group-hover:scale-105">
                              <Image 
                                 src={cat.image}
                                 alt={cat.title}
                                 fill
-                                className={`object-contain ${cat.id === 2 ? 'object-bottom-left' : 'object-bottom-right'}`}
+                                className="object-contain object-bottom"
                                 unoptimized 
                             />
                         </div>

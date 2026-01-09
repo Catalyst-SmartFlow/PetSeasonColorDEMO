@@ -22,13 +22,9 @@ interface PaletteDrawerProps {
   palettes: PaletteData[];
   currentPalette: PaletteData;
   onSelect: (palette: PaletteData) => void;
-  // We can accept a ReactNode for the "Add Color" logic (AdobeColorImport) 
-  // or a handler if we want to separate it. For now, let's allow passing children 
-  // which can be the hidden/visible import component.
-  children?: React.ReactNode; 
 }
 
-export function PaletteDrawer({ palettes, currentPalette, onSelect, children }: PaletteDrawerProps) {
+export function PaletteDrawer({ palettes, currentPalette, onSelect }: PaletteDrawerProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -79,16 +75,6 @@ export function PaletteDrawer({ palettes, currentPalette, onSelect, children }: 
 
                 {/* Main Content */}
                 <div className="px-6 pb-20">
-                    
-                    {/* "Add Color" Section - Passing the AdobeColorImport as children or creating a visual button for it */}
-                    {children && (
-                        <div className="mb-8">
-                             {/* Wrapper to make the passed component look integrated if needed, 
-                                 or assuming children is the AdobeColorImport component 
-                              */}
-                             {children}
-                        </div>
-                    )}
                     
                     {/* Visual Separator */}
                     <div className="flex items-center gap-4 mb-6">

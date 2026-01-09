@@ -16,9 +16,9 @@ export function Hero() {
         transition={{ duration: 1 }}
         className="absolute inset-0 pointer-events-none"
       >
-           {/* Organic shape behind dog - Adjusted for better mobile centering */ }
-           <div className="absolute w-[350px] h-[350px] md:w-[750px] md:h-[750px] left-1/2 -translate-x-1/2 top-10 md:translate-x-12 md:translate-y-16 bg-[var(--secondary)] rounded-full mix-blend-screen opacity-50 blur-3xl animate-pulse"></div>
-           <div className="absolute w-[320px] h-[320px] md:w-[720px] md:h-[720px] left-1/2 -translate-x-1/2 top-14 md:translate-x-8 md:translate-y-12 bg-white/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] backdrop-blur-sm shadow-xl"></div>
+           {/* Organic shape match: Mobile (Centered) -> Desktop (Left Aligned behind Dog) */ }
+           <div className="absolute w-[350px] h-[350px] md:w-[750px] md:h-[750px] left-1/2 -translate-x-1/2 top-10 md:left-0 md:top-0 md:translate-x-12 md:translate-y-16 bg-[var(--secondary)] rounded-full mix-blend-screen opacity-50 blur-3xl animate-pulse"></div>
+           <div className="absolute w-[320px] h-[320px] md:w-[720px] md:h-[720px] left-1/2 -translate-x-1/2 top-14 md:left-0 md:top-0 md:translate-x-8 md:translate-y-12 bg-white/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] backdrop-blur-sm shadow-xl"></div>
       </motion.div>
 
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-8 items-center relative z-10">

@@ -31,5 +31,49 @@
       "background": "#fae1dd",
       "text": "#3a0ca3"
     }
+  },
+  {
+    "id": "active-dog",
+    "name": "Active Dog",
+    "colors": {
+      "primary": "#1243A6",
+      "secondary": "#F29F05",
+      "accent": "#F28705",
+      "background": "#ffffff",
+      "text": "#022859"
+    }
+  },
+  {
+    "id": "pet-brand",
+    "name": "Pet Brand",
+    "colors": {
+      "primary": "#7F71D9",
+      "secondary": "#F2AB27",
+      "accent": "#D9851E",
+      "background": "#ffffff",
+      "text": "#282673"
+    }
+  },
+  {
+    "id": "boii-pet",
+    "name": "Boii Pet",
+    "colors": {
+      "primary": "#A67784",
+      "secondary": "#A62014",
+      "accent": "#172140",
+      "background": "#ffffff",
+      "text": "#172140"
+    }
+  },
+  {
+    "id": "woofable",
+    "name": "Woofable",
+    "colors": {
+      "primary": "#4982A6",
+      "secondary": "#F2CEAE",
+      "accent": "#F26444",
+      "background": "#ffffff",
+      "text": "#40110D"
+    }
   }
 ]

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Hero } from "@/components/features/landing/Hero"; 
 import palettes from '@/data/palettes.json';
-import { AdobeColorImport } from "@/components/features/themer/AdobeColorImport";
 import { ProductGrid } from "@/components/features/landing/ProductGrid";
 import { Marquee } from "@/components/features/landing/Marquee";
 import { Navbar } from "@/components/features/landing/Navbar";
@@ -47,9 +46,7 @@ export default function Home() {
         palettes={palettes} 
         currentPalette={currentPalette} 
         onSelect={setCurrentPalette}
-      >
-        <AdobeColorImport />
-      </PaletteDrawer>
+      />
 
       <Hero />
       <Marquee />
