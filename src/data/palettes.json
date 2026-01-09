@@ -1,0 +1,35 @@
+[
+  {
+    "id": "teal-joy",
+    "name": "Teal Joy",
+    "colors": {
+      "primary": "#29b3af",
+      "secondary": "#2d98da",
+      "accent": "#f1c40f",
+      "background": "#ffffff",
+      "text": "#2c3e50"
+    }
+  },
+  {
+    "id": "ocean-blue",
+    "name": "Ocean Blue",
+    "colors": {
+      "primary": "#0077b6",
+      "secondary": "#90e0ef",
+      "accent": "#03045e",
+      "background": "#caf0f8",
+      "text": "#023e8a"
+    }
+  },
+  {
+    "id": "playful-purple",
+    "name": "Playful Purple",
+    "colors": {
+      "primary": "#7209b7",
+      "secondary": "#f72585",
+      "accent": "#4361ee",
+      "background": "#fae1dd",
+      "text": "#3a0ca3"
+    }
+  }
+]
