@@ -75,7 +75,7 @@ export function Navbar() {
              </div>
              <div className={`flex items-center gap-2 text-sm font-medium ${isScrolled ? 'text-gray-600' : 'text-white'}`}>
                 <Phone className="w-4 h-4" />
-                <span>+1 234 567 890</span>
+                <span>+593 999999999</span>
              </div>
           </div>
 
