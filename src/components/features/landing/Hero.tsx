@@ -7,7 +7,7 @@ import { Heart, Facebook, Instagram } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative w-full overflow-hidden bg-[var(--primary)] text-[var(--text-screen)] min-h-screen md:min-h-[700px] flex items-center pt-28 md:pt-36 pb-20 transition-colors duration-500">
+    <section className="relative w-full overflow-hidden bg-[var(--primary)] text-[var(--text-screen)] min-h-[calc(100vh-2rem)] md:min-h-[550px] flex items-center pt-20 md:pt-24 pb-12 transition-colors duration-500">
       
       {/* Background Subtle Pattern/Blobs */}
       <motion.div 
@@ -21,21 +21,21 @@ export function Hero() {
            <div className="absolute w-[320px] h-[320px] md:w-[720px] md:h-[720px] left-1/2 -translate-x-1/2 top-14 md:left-0 md:top-0 md:translate-x-8 md:translate-y-12 bg-white/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] backdrop-blur-sm shadow-xl"></div>
       </motion.div>
 
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-8 items-center relative z-10">
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center relative z-10">
         
         {/* Left: Image (Visual Focus) */}
         <motion.div 
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative h-[350px] md:h-[500px] lg:h-[600px] flex items-center justify-center order-first lg:order-first mt-8 md:mt-0"
+          className="relative h-[280px] md:h-[400px] lg:h-[550px] flex items-center justify-center order-first lg:order-first mt-0 md:mt-0"
         >
            <Image 
              src="/images/pet_hero.png"
              alt="Happy Dog waiting for adoption"
              width={1000}
              height={1000}
-             className="object-contain relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500 w-[300px] md:w-[600px] lg:w-[900px] max-w-full lg:max-w-none translate-x-0 translate-y-0 lg:translate-x-8 lg:translate-y-16"
+             className="object-contain relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500 w-[260px] md:w-[450px] lg:w-[800px] max-w-full lg:max-w-none translate-x-0 translate-y-0 lg:translate-x-8 lg:translate-y-16"
              priority
            />
            
@@ -58,25 +58,25 @@ export function Hero() {
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="space-y-6 text-center lg:text-right flex flex-col items-center lg:items-end"
+          className="space-y-2 lg:space-y-4 text-center lg:text-right flex flex-col items-center lg:items-end"
         >
-          <div className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold text-sm uppercase tracking-wider shadow-sm">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold text-xs md:text-sm uppercase tracking-wider shadow-sm">
             Pet Shop Premium
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-none tracking-tight">
             Todo lo que <br/>
             <span className="font-normal block text-2xl md:text-4xl mt-2 mb-1">tu mascota ama,</span>
             EN UN SOLO <br/>
             LUGAR!
           </h1>
           
-          <p className="text-lg md:text-xl text-white/90 max-w-lg font-medium leading-relaxed">
+          <p className="text-base md:text-lg text-white/90 max-w-lg font-medium leading-relaxed">
             Encuentra la mejor selección de alimentos, juguetes y accesorios para consentir a tu mejor amigo. Calidad y amor en cada producto.
           </p>
 
-          <div className="flex items-center gap-4 pt-4">
-            <Button size="lg" className="bg-white text-[var(--primary)] hover:bg-gray-100 font-bold text-lg px-8 rounded-full shadow-lg hover:shadow-xl transition-all">
+          <div className="flex items-center gap-4 pt-2">
+            <Button size="lg" className="bg-white text-[var(--primary)] hover:bg-gray-100 font-bold text-base md:text-lg px-6 md:px-8 rounded-full shadow-lg hover:shadow-xl transition-all h-12">
               Ver Productos
             </Button>
             
