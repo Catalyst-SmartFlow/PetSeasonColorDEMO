@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Hero } from "@/components/features/landing/Hero"; 
 import palettes from '@/data/palettes.json';
-import { ProductGrid } from "@/components/features/landing/ProductGrid";
+import { ProductGrid } from "@/components/features/landing/ProductGrid"; // Import grid
 import { Marquee } from "@/components/features/landing/Marquee";
 import { Navbar } from "@/components/features/landing/Navbar";
 import { CategoryBento } from "@/components/features/landing/CategoryBento";

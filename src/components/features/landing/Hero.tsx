@@ -7,7 +7,7 @@ import { Heart, Facebook, Instagram } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative w-full overflow-hidden bg-[var(--primary)] text-[var(--text-screen)] min-h-screen md:min-h-[800px] flex items-center pt-28 md:pt-48 pb-20 transition-colors duration-500">
+    <section className="relative w-full overflow-hidden bg-[var(--primary)] text-[var(--text-screen)] min-h-screen md:min-h-[700px] flex items-center pt-28 md:pt-36 pb-20 transition-colors duration-500">
       
       {/* Background Subtle Pattern/Blobs */}
       <motion.div 
@@ -28,7 +28,7 @@ export function Hero() {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative h-[350px] md:h-[600px] flex items-center justify-center order-first lg:order-first mt-8 md:mt-0"
+          className="relative h-[350px] md:h-[500px] lg:h-[600px] flex items-center justify-center order-first lg:order-first mt-8 md:mt-0"
         >
            <Image 
              src="/images/pet_hero.png"
@@ -46,7 +46,7 @@ export function Hero() {
            <motion.div 
               animate={{ y: [-10, 10, -10] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              className="absolute -bottom-4 right-4 md:bottom-20 md:right-20 z-30 bg-white text-[var(--primary)] py-2 px-4 rounded-full shadow-lg font-bold flex items-center gap-2 text-sm md:text-base"
+              className="absolute bottom-4 right-4 md:bottom-20 md:right-20 z-30 bg-white text-[var(--primary)] py-2 px-4 rounded-full shadow-lg font-bold flex items-center gap-2 text-sm md:text-base"
            >
               <Heart className="w-4 h-4 md:w-5 md:h-5 fill-current" />
               <span>Adopta amor</span>

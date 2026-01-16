@@ -75,5 +75,115 @@
       "background": "#ffffff",
       "text": "#40110D"
     }
+  },
+  {
+    "id": "pet-food-branding",
+    "name": "Pet Food Branding",
+    "colors": {
+      "primary": "#7F71D9",
+      "secondary": "#282673",
+      "accent": "#F2AB27",
+      "background": "#ffffff",
+      "text": "#010326"
+    }
+  },
+  {
+    "id": "equilibra-te",
+    "name": "Equilibra Té",
+    "colors": {
+      "primary": "#D936A0",
+      "secondary": "#F2B3D1",
+      "accent": "#D996C7",
+      "background": "#F2E6C2",
+      "text": "#400F1C"
+    }
+  },
+  {
+    "id": "magic-creatures",
+    "name": "Magic Creatures",
+    "colors": {
+      "primary": "#F24B6A",
+      "secondary": "#78A658",
+      "accent": "#F2B3BF",
+      "background": "#ffffff",
+      "text": "#224021"
+    }
+  },
+  {
+    "id": "plus-pet",
+    "name": "Plus Pet",
+    "colors": {
+      "primary": "#F2E205",
+      "secondary": "#F2CB05",
+      "accent": "#F2B705",
+      "background": "#ffffff",
+      "text": "#010326"
+    }
+  },
+  {
+    "id": "pet-cat-food-packaging",
+    "name": "Pet Cat Food Packaging",
+    "colors": {
+      "primary": "#04BF55",
+      "secondary": "#03A64A",
+      "accent": "#73D997",
+      "background": "#F2F2F2",
+      "text": "#02590F"
+    }
+  },
+  {
+    "id": "wild-feed",
+    "name": "WiLD FEED",
+    "colors": {
+      "primary": "#0AA621",
+      "secondary": "#0D8C20",
+      "accent": "#0A731A",
+      "background": "#0F2E1C",
+      "text": "#E3F2E6"
+    }
+  },
+  {
+    "id": "woof-fun",
+    "name": "Woof Fun",
+    "colors": {
+      "primary": "#F2E205",
+      "secondary": "#F2CB05",
+      "accent": "#D9A404",
+      "background": "#BFB3AE",
+      "text": "#733702"
+    }
+  },
+  {
+    "id": "judys-rescue",
+    "name": "Judy's Rescue",
+    "colors": {
+      "primary": "#A32D0B",
+      "secondary": "#AB2B0F",
+      "accent": "#AB1E0F",
+      "background": "#ffffff",
+      "text": "#942615"
+    }
+  },
+  {
+    "id": "golden-puppy",
+    "name": "Golden Puppy",
+    "colors": {
+      "primary": "#2CBFA4",
+      "secondary": "#F2A25C",
+      "accent": "#56BFAC",
+      "background": "#F2D4C2",
+      "text": "#8C4F2B"
+    }
+  },
+  {
+    "id": "joyful-moments",
+    "name": "Joyful Moments",
+    "colors": {
+      "primary": "#664973",
+      "secondary": "#616F8C",
+      "accent": "#A66C4B",
+      "background": "#EBEFF2",
+      "text": "#394759"
+    }
   }
 ]

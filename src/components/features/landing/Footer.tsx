@@ -14,7 +14,7 @@ export function Footer() {
       </div>
       
       {/* Main Footer Content - Solid Background */}
-      <div className="bg-[var(--text-main)] text-white/80 pt-8 pb-12">
+      <div className="bg-[var(--text-main)] text-[var(--surface)]/80 pt-8 pb-12">
         <div className="container mx-auto px-4 relative z-10">
         
         {/* Top Section: Grid */}
@@ -23,11 +23,11 @@ export function Footer() {
             {/* Brand Column */}
             <div className="space-y-6">
                 <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white">
+                    <div className="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-[var(--surface)]">
                          {/* Simple Logo Icon */}
                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 5.172C10 5.172 19.657 8.657 19.657 18.657C19.657 18.657 20.314 5.657 10 2C10 2 0.686 5.657 0.686 18.657C0.686 18.657 0.686 8.657 10 5.172Z"/></svg>
                     </div>
-                    <span className="text-2xl font-bold text-white">PetSeason</span>
+                    <span className="text-2xl font-bold text-[var(--surface)]">PetSeason</span>
                 </div>
                 <p className="leading-relaxed">
                     Hacemos que la vida de tu mascota sea más colorida y feliz. Productos premium con un estilo único para cada temporada.
@@ -41,7 +41,7 @@ export function Footer() {
 
             {/* Links Column */}
             <div>
-                <h4 className="text-white font-bold text-lg mb-6">Explorar</h4>
+                <h4 className="text-[var(--surface)] font-bold text-lg mb-6">Explorar</h4>
                 <ul className="space-y-4">
                     <FooterLink>Tienda</FooterLink>
                     <FooterLink>Ofertas</FooterLink>
@@ -52,7 +52,7 @@ export function Footer() {
 
             {/* Support Column */}
             <div>
-                <h4 className="text-white font-bold text-lg mb-6">Ayuda</h4>
+                <h4 className="text-[var(--surface)] font-bold text-lg mb-6">Ayuda</h4>
                 <ul className="space-y-4">
                     <FooterLink>Envíos y Devoluciones</FooterLink>
                     <FooterLink>Preguntas Frecuentes</FooterLink>
@@ -63,15 +63,15 @@ export function Footer() {
 
             {/* Newsletter Column */}
             <div>
-                <h4 className="text-white font-bold text-lg mb-6">Suscríbete</h4>
+                <h4 className="text-[var(--surface)] font-bold text-lg mb-6">Suscríbete</h4>
                 <p className="mb-6 text-sm">Recibe las últimas noticias y códigos de descuento exclusivos.</p>
                 <div className="space-y-3">
                     <input 
                         type="email" 
                         placeholder="Tu correo electrónico" 
-                        className="w-full h-12 px-4 rounded-xl bg-white/10 border border-white/10 focus:border-[var(--primary)] outline-none text-white placeholder-white/50 transition-colors"
+                        className="w-full h-12 px-4 rounded-xl bg-[var(--surface)]/10 border border-[var(--surface)]/10 focus:border-[var(--primary)] outline-none text-[var(--surface)] placeholder-[var(--surface)]/50 transition-colors"
                     />
-                    <Button className="w-full bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-[var(--text-screen)] font-bold h-12 rounded-xl">
+                    <Button className="w-full bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-[var(--surface)] font-bold h-12 rounded-xl">
                         Suscribirse <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                 </div>
@@ -79,7 +79,7 @@ export function Footer() {
 
         </div>
 
-        <div className="border-t border-white/10 pt-8 pb-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <div className="border-t border-[var(--surface)]/10 pt-8 pb-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p>&copy; {new Date().getFullYear()} PetSeason. Todos los derechos reservados.</p>
             <div className="flex gap-6">
                 <a href="#" className="hover:text-[var(--primary)] transition-colors">Privacidad</a>
@@ -95,7 +95,7 @@ export function Footer() {
 
 function SocialIcon({ icon }: { icon: React.ReactNode }) {
     return (
-        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary)] hover:text-white transition-all duration-300">
+        <a href="#" className="w-10 h-10 rounded-full bg-[var(--surface)]/10 flex items-center justify-center hover:bg-[var(--primary)] hover:text-[var(--surface)] transition-all duration-300">
             {icon}
         </a>
     )
